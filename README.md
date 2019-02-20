@@ -1,6 +1,6 @@
 # treemap in C++
 
-a (generic) treemap written in C++ with the use of templates based on the example on https://www.geeksforgeeks.org/avl-tree-set-1-insertion/.
+A (generic) treemap written in C++ with the use of templates based on the example on https://www.geeksforgeeks.org/avl-tree-set-1-insertion/.
 Like the link says, the tree uses the AVL algorithm to sort itself after insertion and deletion,
 so an access time of O(log n) is guaranteed.
 
