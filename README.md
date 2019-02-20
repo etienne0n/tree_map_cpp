@@ -12,22 +12,26 @@ boost library is needed for the <boost/optional/optional_io.hpp header>.
 ### How to use
 
 1. create a new tree_map:
+````````
 tree_map<key_type, value_type>* root = nullptr;
-
+````````
 2. insert elements :
-
+````````
 root = insert(root, a_key, a_value);
 root = insert(root, another_key, another_value);
 ...
+````````
 
 3. delete elements : 
+````````
 root = delete_node(root, another_key);
 ...
+````````
 
 4. printing the tree (pre-order)
-
+````````
 std::cout << root->to_string() << std::endl;
-
+````````
 5. Accessing elements
 through
 template <class K, class V>
@@ -46,7 +50,9 @@ custom key_types should implement the operators
 <, > and << for correct comparison and printing.
 
 (in public area of class : 
+````````
 	bool operator < (const my_key_type& other) const; 
+````````
 etc..)
 
 custom value_types should implement the operator
